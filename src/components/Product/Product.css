@@ -8,6 +8,8 @@
   width: 286px;
   margin: auto;
   display: block;
+  padding: 8px;
+  border-radius: 16px;
 }
 .price-content {
   padding: 8px;
