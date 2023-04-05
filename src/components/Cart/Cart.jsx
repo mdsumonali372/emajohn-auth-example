@@ -5,6 +5,8 @@ import "./Cart.css";
 
 const Cart = (props) => {
   const { cart } = props;
+  const handleClearCart = props.handleClearCart;
+  // console.log(props.handleClearCart);
   //   console.log(cart);
   let totalPrice = 0;
   let totalShipping = 0;
@@ -26,7 +28,7 @@ const Cart = (props) => {
       <p>Tax: ${tax.toFixed(2)}</p>
       <h5>Grand Total: ${grandTotal.toFixed(2)}</h5>
       <div>
-        <button className="clear-btn">
+        <button onClick={handleClearCart} className="clear-btn">
           Clear Cart <FontAwesomeIcon icon={faTrash}></FontAwesomeIcon>{" "}
         </button>
         <button className="review-btn">
