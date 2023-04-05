@@ -4,11 +4,11 @@
   border-radius: 8px;
   position: relative;
 }
+.product-img {
+  padding: 5px;
+}
 .product img {
-  width: 286px;
-  margin: auto;
-  display: block;
-  padding: 8px;
+  width: 100%;
   border-radius: 16px;
 }
 .price-content {
@@ -20,6 +20,7 @@
   font-size: 21px;
   line-height: 25px;
   letter-spacing: 0.0015em;
+  margin-top: 8px;
 }
 .price-content h4 {
   font-weight: 400;
