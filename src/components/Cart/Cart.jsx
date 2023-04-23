@@ -1,11 +1,13 @@
-import { faArrowRight, faTrash } from "@fortawesome/free-solid-svg-icons";
+import { faTrash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import "./Cart.css";
 
-const Cart = (props) => {
-  const { cart } = props;
-  const handleClearCart = props.handleClearCart;
+const Cart = ({ cart, handleClearCart, children }) => {
+  // const { cart } = props;
+  // // console.log(props.children);
+  // // const children = props.children;
+  // const handleClearCart = props.handleClearCart;
   // console.log(props.handleClearCart);
   //   console.log(cart);
   let totalPrice = 0;
@@ -31,9 +33,10 @@ const Cart = (props) => {
         <button onClick={handleClearCart} className="clear-btn">
           Clear Cart <FontAwesomeIcon icon={faTrash}></FontAwesomeIcon>{" "}
         </button>
-        <button className="review-btn">
+        {/* <button className="review-btn">
           Review Order <FontAwesomeIcon icon={faArrowRight} />{" "}
-        </button>
+        </button> */}
+        {children}
       </div>
     </div>
   );
